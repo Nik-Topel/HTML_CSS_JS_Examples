@@ -1,0 +1,21 @@
+.table_content {
+    text-align: left;
+}
+.text_effects {
+    text-align: left;
+    line-height : 40px;
+}
+th {
+    background-color:rgb(177, 177, 177);
+    border : 4px solid black;
+    vertical-align: top;
+}
+table {
+    width:100%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+.header_collection {
+    margin : 0;
+    padding : 0;
+}
