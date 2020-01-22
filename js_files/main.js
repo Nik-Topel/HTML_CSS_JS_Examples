@@ -2,6 +2,15 @@ var html_string= "html_files/html_examples.html";
 var css_string= "html_files/css_examples.html";
 var js_string= "html_files/js_examples.html";
 var loaded_page = 1;
+function start(){
+    if(document.getElementById('iframe_1').src == html_string){
+        loaded_page = 1;
+    }else if(document.getElementById('iframe_1').src == css_string){
+        loaded_page = 2;
+    }else if(document.getElementById('iframe_1').src == js_string){
+        loaded_page = 3;
+    }
+}
 function set_iframe_to_html(){
     if(loaded_page != 1){
         document.getElementById('iframe_1').src = escape(html_string);
