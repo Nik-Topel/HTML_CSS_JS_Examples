@@ -76,3 +76,73 @@ table {
     background-image: url("../image_files/background_1.png");
     background-color: rgb(177,177,177);
 }
+.shade{
+    text-shadow: 2px 2px #333333;
+}
+@keyframes textcolor_anim {
+    0% {color:#ff0000 ; }
+    9% {color:#ff7f00 ; }
+    18% {color:#ffff00 ; }
+    27% {color:#7fff00; }
+    36% {color:#00ff00; }
+    45% {color:#00ff7f; }
+    54% {color:#00ffff; }
+    63% {color:#007fff; }
+    72% {color:#0000ff; }
+    81% {color:#7f00ff; }
+    90% {color:#ff00ff; }
+    100% {color:#ff0000;}
+} 
+@keyframes bgcolor_anim {
+    0%   {background-color:#ff0000 ; }
+    9%  {background-color:#ff7f00 ; }
+    18%  {background-color:#ffff00 ; }
+    27%  {background-color:#7fff00; }
+    36%  {background-color:#00ff00; }
+    45%  {background-color:#00ff7f; }
+    54%  {background-color:#00ffff; }
+    63% {background-color:#007fff; }
+    72% {background-color:#0000ff; }
+    81% {background-color:#7f00ff; }
+    90% {background-color:#ff00ff; }
+    100% {background-color:#ff0000;}
+} 
+.color_changing_text {
+    color: red;
+    animation-name: textcolor_anim;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.color_changing_bg {
+    animation-name: bgcolor_anim;
+    animation-duration: 5s;
+    animation-delay : -2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.typewritter_text {
+    text-align: left;
+    border-right: 2px solid black;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(40, end),blink .75s step-end infinite;
+    white-space: nowrap;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: black; 
+    }
+}
