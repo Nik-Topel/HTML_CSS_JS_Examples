@@ -9,6 +9,16 @@ function change_image(){
 }
 function random_text(){
     document.getElementById("random_number").textContent = Math.round(Math.random()*100);
+} 
+function calculator_update_addition(){
+    if(document.getElementById("in_1").value != null && document.getElementById("in_2").value != null){
+        document.getElementById("equals1").textContent = parseFloat(document.getElementById("in_1").value,10) + parseFloat(document.getElementById("in_2").value,10);
+    }
+}
+function calculator_update_multiplication(){
+    if(document.getElementById("in_3").value != null && document.getElementById("in_4").value != null){
+        document.getElementById("equals2").textContent = parseFloat(document.getElementById("in_3").value,10) * parseFloat(document.getElementById("in_4").value,10);
+    }
 }
 function add_to_number(){
     document.getElementById("add_to_number").textContent = parseInt(document.getElementById("add_to_number").textContent,10) +1;

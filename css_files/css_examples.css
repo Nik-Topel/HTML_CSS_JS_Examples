@@ -51,8 +51,22 @@ table {
     src: url(../font_files/ComicSansMS.ttf);
     font-family: comic-sans;
 }
+@font-face {
+    src: url(../font_files/AlteSchwabacher.ttf);
+    font-family: old_german_font_ff;
+}
+@font-face {
+    src: url(../font_files/fixedmedium-4x6.ttf);
+    font-family: pixel_font_4X6;
+}
 .comic_sans{
     font-family: comic-sans;
+}
+.old_german_font{
+    font-family: old_german_font_ff;
+}
+.pixel_font{
+    font-family: pixel_font_4X6;
 }
 .border_normal{
     border-top:8px solid #000000;
