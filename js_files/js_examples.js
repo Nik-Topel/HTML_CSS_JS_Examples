@@ -20,6 +20,11 @@ function calculator_update_multiplication(){
         document.getElementById("equals2").textContent = parseFloat(document.getElementById("in_3").value,10) * parseFloat(document.getElementById("in_4").value,10);
     }
 }
+function calculator_update_divition(){
+    if(document.getElementById("in_5").value != null && document.getElementById("in_6").value != null){
+        document.getElementById("equals3").textContent = parseFloat(document.getElementById("in_5").value,10) / parseFloat(document.getElementById("in_6").value,10);
+    }
+}
 function add_to_number(){
     document.getElementById("add_to_number").textContent = parseInt(document.getElementById("add_to_number").textContent,10) +1;
 }
@@ -52,7 +57,7 @@ function update_timer()
     }
     if(s == 60){
         m += 1;
-        s = 60;
+        s = 0;
     }
     if(m == 60){
         h += 1;
