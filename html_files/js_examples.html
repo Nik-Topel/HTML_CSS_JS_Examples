@@ -4,7 +4,8 @@
         <script src="../js_files/js_examples.js"></script>
         <link rel="stylesheet" type="text/css" href="../css_files/js_examples.css">
     </head>
-    <body>
+    <body onload="start()">
+        <div id ="this_is_js"></div>
         <table>
             <tr>
                 <th>
@@ -69,7 +70,37 @@
                             </span>
                         </div> 
                     </h3>
-                </th>            
+                </th>  
+                <th>
+                    <h2>
+                        <div class="table_titles">
+                            <u>Change Color/ CSS Property</u>
+                        </div>
+                    </h2>
+                    <h3>
+                        <button class="page_button" onclick= "change_color()" ><h2>Change Color</h2></button>
+                        <br>
+                        <span id="change_color">
+                            Color
+                        </span>
+                    </h3>
+                </th>          
+            </tr>
+            <tr>
+                <th>
+                    <h2>
+                        <div class="table_titles">
+                            <u>Timer</u>
+                        </div>
+                    </h2>
+                    <h3>
+                        <div class="table_content">
+                            <span id="timer">
+                                
+                            </span>
+                        </div> 
+                    </h3>
+                </th>
             </tr>
         </table>
     </body>
