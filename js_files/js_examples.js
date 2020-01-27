@@ -45,13 +45,16 @@ var h = 0;
 var d = 0;
 var w = 0;
 function pad2(number) {
-    return (number < 10 ? '0' : '') + number;
+    return ("00" + number).substr(-2,2)
+}
+function pad3(number) {
+    return ("000" + number).substr(-3,3)
 }
 function update_timer()
 {
     setTimeout(function(){
-    ms += 1;
-    if(ms == 100){
+    ms += 5;
+    if(ms > 999){
         s += 1;
         ms = 0;
     }
@@ -71,7 +74,7 @@ function update_timer()
         w += 1;
         d = 0
     }
-    document.getElementById("timer").textContent = pad2(w) +":"+ pad2(d) +":"+ pad2(h) +":"+ pad2(m) +":"+ pad2(s) +":"+ pad2(ms); 
+    document.getElementById("timer").textContent = pad2(w) +":"+ pad2(d) +":"+ pad2(h) +":"+ pad2(m) +":"+ pad2(s) +":"+ pad3(ms); 
     update_timer(); 
-    },10)
+    },5)
 }
