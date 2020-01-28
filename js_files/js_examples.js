@@ -53,8 +53,8 @@ function pad3(number) {
 function update_timer()
 {
     setTimeout(function(){
-    ms += 5;
-    if(ms > 999){
+    ms += 50;
+    if(ms == 1000){
         s += 1;
         ms = 0;
     }
@@ -76,5 +76,5 @@ function update_timer()
     }
     document.getElementById("timer").textContent = pad2(w) +":"+ pad2(d) +":"+ pad2(h) +":"+ pad2(m) +":"+ pad2(s) +":"+ pad3(ms); 
     update_timer(); 
-    },5)
+    },50)
 }
