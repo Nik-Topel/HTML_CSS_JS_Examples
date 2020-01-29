@@ -121,6 +121,17 @@ table {
     90% {background-color:#ff00ff; }
     100% {background-color:#ff0000;}
 } 
+@keyframes image_anim {
+    0%   {background: url("../image_files/loading_animation/loading_wheel_1.png")no-repeat; }
+    12.5%   {background: url("../image_files/loading_animation/loading_wheel_2.png")no-repeat;}
+    25%   {background: url("../image_files/loading_animation/loading_wheel_3.png")  no-repeat ; }
+    37.5%   {background: url("../image_files/loading_animation/loading_wheel_4.png")  no-repeat ; }
+    50%   {background: url("../image_files/loading_animation/loading_wheel_5.png")  no-repeat ; }
+    62.5%   {background: url("../image_files/loading_animation/loading_wheel_6.png")  no-repeat ; }
+    75%   {background: url("../image_files/loading_animation/loading_wheel_7.png")  no-repeat ; }
+    87.5%   {background: url("../image_files/loading_animation/loading_wheel_8.png") no-repeat ; }
+    100%   {background: url("../image_files/loading_animation/loading_wheel_1.png") no-repeat ; }
+}
 .color_changing_text {
     color: red;
     animation-name: textcolor_anim;
@@ -143,6 +154,16 @@ table {
  	animation: typing 5s steps(40, end),blink .75s step-end infinite;
     white-space: nowrap;
 }
+.animated_image{
+    padding: 100px;
+    width:0px; 
+    height:0px;
+    animation-name: image_anim;
+    animation-duration: 0.75s;
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 
 @keyframes typing {
     from { 
@@ -159,4 +180,64 @@ table {
     50% { 
         border-color: black; 
     }
+}
+.f1px {
+    font-size: 1px;
+}
+.f2px {
+    font-size: 2px;
+}
+.f3px {
+    font-size: 3px;
+}
+.f4px {
+    font-size: 4px;
+}
+.f5px {
+    font-size: 5px;
+}
+.f6px {
+    font-size: 6px;
+}
+.f7px {
+    font-size: 7px;
+}
+.f8px {
+    font-size: 8px;
+}
+.f9px {
+    font-size: 9px;
+}
+.f10px {
+    font-size: 10px;
+}
+.f11px {
+    font-size: 11px;
+}
+.f12px {
+    font-size: 12px;
+}
+.f13px {
+    font-size: 13px;
+}
+.f14px {
+    font-size: 14px;
+}
+.f15px {
+    font-size: 15px;
+}
+.f16px {
+    font-size: 16px;
+}
+.f17px {
+    font-size: 17px;
+}
+.f18px {
+    font-size: 18px;
+}
+.f19px {
+    font-size: 19px;
+}
+.f20px {
+    font-size: 20px;
 }
