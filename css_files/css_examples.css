@@ -151,7 +151,7 @@ table {
     border-right: 2px solid black;
   	overflow: hidden;
   	letter-spacing: 2px;
- 	animation: typing 5s steps(40, end),blink .75s step-end infinite;
+ 	animation: typing 5s steps(40) infinite,blink .75s step-end infinite;
     white-space: nowrap;
 }
 .animated_image{
@@ -240,4 +240,19 @@ table {
 }
 .f20px {
     font-size: 20px;
+}
+.lin_gradient{
+    background-image: linear-gradient(to bottom right, white, black);
+    height: 300px;
+}
+.rep_gradient{
+    background-image: repeating-linear-gradient(to bottom right, white 0%, black 10%);
+    height: 300px;
+}
+.rad_gradient{
+    background-image: radial-gradient(white, black);
+    height: 300px;
+}
+.rad_rep_gradient{
+    background-image: repeating-radial-gradient(white 0%, black 10%);
 }
