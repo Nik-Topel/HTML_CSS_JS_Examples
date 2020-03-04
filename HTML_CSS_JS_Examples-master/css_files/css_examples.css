@@ -1,0 +1,258 @@
+.table_content {
+    text-align: left;
+}
+th {
+    background-color:rgb(177, 177, 177);
+    border : 4px solid black;
+    vertical-align: top;
+}
+table {
+    width:100%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+.color_red {
+    color:rgb(255,0,0);
+}
+.color_green {
+    color:rgb(0, 255, 0);
+}
+.color_blue {
+    color:rgb(0, 0, 255);
+}
+.color_yellow {
+    color:rgb(255, 255, 0);
+}
+.color_orange {
+    color:rgb(255, 147, 0);
+}
+.color_cyan {
+    color:rgb(0, 255, 255);
+}
+.color_pink {
+    color:rgb(255, 0, 255);
+}
+.color_violet {
+    color:rgb(147, 0, 255);
+}
+.arial{
+    font-family: Arial;
+}
+.times_new_roman {
+    font-family: 'Times New Roman';
+}
+.courier_new{
+    font-family: 'Courier New';
+}
+.lucida_sans {
+    font-family: 'Lucida Sans';
+}
+@font-face {
+    src: url(../font_files/ComicSansMS.ttf);
+    font-family: comic-sans;
+}
+@font-face {
+    src: url(../font_files/AlteSchwabacher.ttf);
+    font-family: old_german_font_ff;
+}
+@font-face {
+    src: url(../font_files/fixedmedium-4x6.ttf);
+    font-family: pixel_font_4X6;
+}
+.comic_sans{
+    font-family: comic-sans;
+}
+.old_german_font{
+    font-family: old_german_font_ff;
+}
+.pixel_font{
+    font-family: pixel_font_4X6;
+}
+.border_normal{
+    border-top:8px solid #000000;
+}
+.border_dotted{
+    border-top:8px dotted #000000;
+}
+.border_dashed{
+    border-top:8px dashed #000000;
+}
+.border_double{
+    border-top:8px double #000000;
+}
+.border_groove{
+    border-top:8px groove #000000;
+}
+.border_ridge{
+    border-top:8px ridge #000000;
+}
+.background_1{
+    background-image: url("../image_files/background_1.png");
+    background-color: rgb(177,177,177);
+}
+.shade{
+    text-shadow: 2px 2px #333333;
+}
+@keyframes textcolor_anim {
+    0% {color:#ff0000 ; }
+    9% {color:#ff7f00 ; }
+    18% {color:#ffff00 ; }
+    27% {color:#7fff00; }
+    36% {color:#00ff00; }
+    45% {color:#00ff7f; }
+    54% {color:#00ffff; }
+    63% {color:#007fff; }
+    72% {color:#0000ff; }
+    81% {color:#7f00ff; }
+    90% {color:#ff00ff; }
+    100% {color:#ff0000;}
+} 
+@keyframes bgcolor_anim {
+    0%   {background-color:#ff0000 ; }
+    9%  {background-color:#ff7f00 ; }
+    18%  {background-color:#ffff00 ; }
+    27%  {background-color:#7fff00; }
+    36%  {background-color:#00ff00; }
+    45%  {background-color:#00ff7f; }
+    54%  {background-color:#00ffff; }
+    63% {background-color:#007fff; }
+    72% {background-color:#0000ff; }
+    81% {background-color:#7f00ff; }
+    90% {background-color:#ff00ff; }
+    100% {background-color:#ff0000;}
+} 
+@keyframes image_anim {
+    0%   {background: url("../image_files/loading_animation/loading_wheel_1.png")no-repeat; }
+    12.5%   {background: url("../image_files/loading_animation/loading_wheel_2.png")no-repeat;}
+    25%   {background: url("../image_files/loading_animation/loading_wheel_3.png")  no-repeat ; }
+    37.5%   {background: url("../image_files/loading_animation/loading_wheel_4.png")  no-repeat ; }
+    50%   {background: url("../image_files/loading_animation/loading_wheel_5.png")  no-repeat ; }
+    62.5%   {background: url("../image_files/loading_animation/loading_wheel_6.png")  no-repeat ; }
+    75%   {background: url("../image_files/loading_animation/loading_wheel_7.png")  no-repeat ; }
+    87.5%   {background: url("../image_files/loading_animation/loading_wheel_8.png") no-repeat ; }
+    100%   {background: url("../image_files/loading_animation/loading_wheel_1.png") no-repeat ; }
+}
+.color_changing_text {
+    color: red;
+    animation-name: textcolor_anim;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.color_changing_bg {
+    animation-name: bgcolor_anim;
+    animation-duration: 5s;
+    animation-delay : -2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.typewritter_text {
+    text-align: left;
+    border-right: 2px solid black;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(40) infinite,blink .75s step-end infinite;
+    white-space: nowrap;
+}
+.animated_image{
+    padding: 100px;
+    width:0px; 
+    height:0px;
+    animation-name: image_anim;
+    animation-duration: 0.75s;
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: black; 
+    }
+}
+.f1px {
+    font-size: 1px;
+}
+.f2px {
+    font-size: 2px;
+}
+.f3px {
+    font-size: 3px;
+}
+.f4px {
+    font-size: 4px;
+}
+.f5px {
+    font-size: 5px;
+}
+.f6px {
+    font-size: 6px;
+}
+.f7px {
+    font-size: 7px;
+}
+.f8px {
+    font-size: 8px;
+}
+.f9px {
+    font-size: 9px;
+}
+.f10px {
+    font-size: 10px;
+}
+.f11px {
+    font-size: 11px;
+}
+.f12px {
+    font-size: 12px;
+}
+.f13px {
+    font-size: 13px;
+}
+.f14px {
+    font-size: 14px;
+}
+.f15px {
+    font-size: 15px;
+}
+.f16px {
+    font-size: 16px;
+}
+.f17px {
+    font-size: 17px;
+}
+.f18px {
+    font-size: 18px;
+}
+.f19px {
+    font-size: 19px;
+}
+.f20px {
+    font-size: 20px;
+}
+.lin_gradient{
+    background-image: linear-gradient(to bottom right, white, black);
+    height: 300px;
+}
+.rep_gradient{
+    background-image: repeating-linear-gradient(to bottom right, white 0%, black 10%);
+    height: 300px;
+}
+.rad_gradient{
+    background-image: radial-gradient(white, black);
+    height: 300px;
+}
+.rad_rep_gradient{
+    background-image: repeating-radial-gradient(white 0%, black 10%);
+}
